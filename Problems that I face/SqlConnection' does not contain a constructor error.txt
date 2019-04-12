@@ -1,0 +1,4 @@
+I got a "SqlConnection' does not contain a constructor that takes 1 arguments" Error.
+Because I defined my new class as SqlConnection, I got that error.
+There is a definition which SqlConnection connection= new SqlConnection. However, 
+my both class and definition was named by the same name.

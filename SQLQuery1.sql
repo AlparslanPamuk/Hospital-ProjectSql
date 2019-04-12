@@ -1,0 +1,1 @@
+select docname,docsurname from Tbl_Doctors where docbranch='Eye Diseases'
