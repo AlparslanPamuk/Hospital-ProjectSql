@@ -37,7 +37,6 @@
             this.btncreate = new System.Windows.Forms.Button();
             this.rchannouncements = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnupdate = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.btnsave = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -57,6 +56,7 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.DvDoctors = new System.Windows.Forms.DataGridView();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnappointmentlist = new System.Windows.Forms.Button();
             this.btnbranchpanel = new System.Windows.Forms.Button();
             this.btndoctorpanel = new System.Windows.Forms.Button();
@@ -150,7 +150,6 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.btnupdate);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.btnsave);
             this.groupBox3.Controls.Add(this.label9);
@@ -172,15 +171,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Appointment State";
             // 
-            // btnupdate
-            // 
-            this.btnupdate.Location = new System.Drawing.Point(20, 381);
-            this.btnupdate.Name = "btnupdate";
-            this.btnupdate.Size = new System.Drawing.Size(277, 35);
-            this.btnupdate.TabIndex = 9;
-            this.btnupdate.Text = "Update";
-            this.btnupdate.UseVisualStyleBackColor = true;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -192,9 +182,9 @@
             // 
             // btnsave
             // 
-            this.btnsave.Location = new System.Drawing.Point(20, 340);
+            this.btnsave.Location = new System.Drawing.Point(20, 358);
             this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(277, 35);
+            this.btnsave.Size = new System.Drawing.Size(277, 58);
             this.btnsave.TabIndex = 8;
             this.btnsave.Text = "Save";
             this.btnsave.UseVisualStyleBackColor = true;
@@ -348,6 +338,7 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.button1);
             this.groupBox6.Controls.Add(this.btnappointmentlist);
             this.groupBox6.Controls.Add(this.btnbranchpanel);
             this.groupBox6.Controls.Add(this.btndoctorpanel);
@@ -358,11 +349,21 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Easy Access";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(432, 32);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(158, 65);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Announcements";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btnappointmentlist
             // 
-            this.btnappointmentlist.Location = new System.Drawing.Point(324, 36);
+            this.btnappointmentlist.Location = new System.Drawing.Point(278, 32);
             this.btnappointmentlist.Name = "btnappointmentlist";
-            this.btnappointmentlist.Size = new System.Drawing.Size(271, 65);
+            this.btnappointmentlist.Size = new System.Drawing.Size(148, 65);
             this.btnappointmentlist.TabIndex = 13;
             this.btnappointmentlist.Text = "Appointment List";
             this.btnappointmentlist.UseVisualStyleBackColor = true;
@@ -370,9 +371,9 @@
             // 
             // btnbranchpanel
             // 
-            this.btnbranchpanel.Location = new System.Drawing.Point(171, 36);
+            this.btnbranchpanel.Location = new System.Drawing.Point(145, 32);
             this.btnbranchpanel.Name = "btnbranchpanel";
-            this.btnbranchpanel.Size = new System.Drawing.Size(147, 65);
+            this.btnbranchpanel.Size = new System.Drawing.Size(127, 65);
             this.btnbranchpanel.TabIndex = 12;
             this.btnbranchpanel.Text = "Branch Panel";
             this.btnbranchpanel.UseVisualStyleBackColor = true;
@@ -380,9 +381,9 @@
             // 
             // btndoctorpanel
             // 
-            this.btndoctorpanel.Location = new System.Drawing.Point(11, 36);
+            this.btndoctorpanel.Location = new System.Drawing.Point(17, 32);
             this.btndoctorpanel.Name = "btndoctorpanel";
-            this.btndoctorpanel.Size = new System.Drawing.Size(154, 65);
+            this.btndoctorpanel.Size = new System.Drawing.Size(122, 65);
             this.btndoctorpanel.TabIndex = 11;
             this.btndoctorpanel.Text = "Doctor Panel";
             this.btndoctorpanel.UseVisualStyleBackColor = true;
@@ -393,6 +394,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.Color.Coral;
             this.ClientSize = new System.Drawing.Size(1203, 555);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
@@ -438,7 +440,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button btnupdate;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Label label9;
@@ -456,5 +457,6 @@
         private System.Windows.Forms.Button btnappointmentlist;
         private System.Windows.Forms.Button btnbranchpanel;
         private System.Windows.Forms.Button btndoctorpanel;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -44,6 +44,7 @@
             this.btnenter.Size = new System.Drawing.Size(251, 169);
             this.btnenter.TabIndex = 3;
             this.btnenter.UseVisualStyleBackColor = true;
+            this.btnenter.Click += new System.EventHandler(this.btnenter_Click);
             // 
             // txtpassword
             // 

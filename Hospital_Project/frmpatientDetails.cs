@@ -25,7 +25,7 @@ namespace Hospital_Project
         private void frmpatientdetails_Load(object sender, EventArgs e)
         {
             lblidentity.Text = ID;
-            
+            txtid.Enabled = false;
 
             // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
             this.Text = "Hospital Project By: Mustafa Alparslan Pamuk";
@@ -87,7 +87,7 @@ namespace Hospital_Project
         private void cmbdoctors_SelectedIndexChanged(object sender, EventArgs e)
         {
             DataTable dtAlparslan = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("select * from Tbl_Appointments  where appointmentbranch='" + cmbbranch.Text+ "'", connectionON.connection());
+            SqlDataAdapter da = new SqlDataAdapter("select * from Tbl_Appointments  where appointmentbranch='" + cmbbranch.Text+ "'" + "and appointmentdoctor= '" + cmbdoctors.Text + "' and appointmentstate=0", connectionON.connection());
             da.Fill(dtAlparslan);
             dataGridView2.DataSource = dtAlparslan;
         }
@@ -98,6 +98,23 @@ namespace Hospital_Project
             frmakc.IDno = lblidentity.Text;
             frmakc.Show();
             this.Hide();
+        }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int selected = dataGridView2.SelectedCells[0].RowIndex;
+            txtid.Text = dataGridView2.Rows[selected].Cells[0].Value.ToString();
+        }
+
+        private void btnappointment_Click(object sender, EventArgs e)
+        {
+            SqlCommand command51 = new SqlCommand("update Tbl_Appointments set appointmentstate=1, patienttc=@p1,patientcomplaint=@p2 where appointmentid=@p3", connectionON.connection());
+            command51.Parameters.AddWithValue("@p1", lblidentity.Text);
+            command51.Parameters.AddWithValue("@p2", rchappointment.Text);
+            command51.Parameters.AddWithValue("@p3", txtid.Text);
+            command51.ExecuteNonQuery();
+            connectionON.connection().Close();
+            MessageBox.Show("Appointment Have been Settled!","Mustafa Alparslan Pamuk Hospital Project",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
     }
     

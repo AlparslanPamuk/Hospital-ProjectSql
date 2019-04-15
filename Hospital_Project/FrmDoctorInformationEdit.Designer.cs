@@ -117,6 +117,7 @@
             this.btnupdate.Size = new System.Drawing.Size(210, 150);
             this.btnupdate.TabIndex = 6;
             this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // txtpassword
             // 
@@ -138,6 +139,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(457, 367);
             this.Controls.Add(this.txtsurname);
             this.Controls.Add(this.txtpassword);

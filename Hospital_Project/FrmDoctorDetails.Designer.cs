@@ -39,10 +39,10 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnexit = new System.Windows.Forms.Button();
             this.btnannouncements = new System.Windows.Forms.Button();
             this.btnedit = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -149,6 +149,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(547, 529);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // groupBox4
             // 
@@ -164,33 +165,6 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Doctor Information";
             // 
-            // btnexit
-            // 
-            this.btnexit.Location = new System.Drawing.Point(165, 70);
-            this.btnexit.Name = "btnexit";
-            this.btnexit.Size = new System.Drawing.Size(159, 33);
-            this.btnexit.TabIndex = 5;
-            this.btnexit.Text = "Exit";
-            this.btnexit.UseVisualStyleBackColor = true;
-            // 
-            // btnannouncements
-            // 
-            this.btnannouncements.Location = new System.Drawing.Point(165, 31);
-            this.btnannouncements.Name = "btnannouncements";
-            this.btnannouncements.Size = new System.Drawing.Size(159, 33);
-            this.btnannouncements.TabIndex = 3;
-            this.btnannouncements.Text = "Announcements";
-            this.btnannouncements.UseVisualStyleBackColor = true;
-            // 
-            // btnedit
-            // 
-            this.btnedit.Location = new System.Drawing.Point(6, 31);
-            this.btnedit.Name = "btnedit";
-            this.btnedit.Size = new System.Drawing.Size(159, 33);
-            this.btnedit.TabIndex = 2;
-            this.btnedit.Text = "Edit Information";
-            this.btnedit.UseVisualStyleBackColor = true;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(6, 70);
@@ -200,6 +174,36 @@
             this.button1.Text = "<-";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnexit
+            // 
+            this.btnexit.Location = new System.Drawing.Point(165, 70);
+            this.btnexit.Name = "btnexit";
+            this.btnexit.Size = new System.Drawing.Size(159, 33);
+            this.btnexit.TabIndex = 5;
+            this.btnexit.Text = "Exit";
+            this.btnexit.UseVisualStyleBackColor = true;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
+            // 
+            // btnannouncements
+            // 
+            this.btnannouncements.Location = new System.Drawing.Point(165, 31);
+            this.btnannouncements.Name = "btnannouncements";
+            this.btnannouncements.Size = new System.Drawing.Size(159, 33);
+            this.btnannouncements.TabIndex = 3;
+            this.btnannouncements.Text = "Announcements";
+            this.btnannouncements.UseVisualStyleBackColor = true;
+            this.btnannouncements.Click += new System.EventHandler(this.btnannouncements_Click);
+            // 
+            // btnedit
+            // 
+            this.btnedit.Location = new System.Drawing.Point(6, 31);
+            this.btnedit.Name = "btnedit";
+            this.btnedit.Size = new System.Drawing.Size(159, 33);
+            this.btnedit.TabIndex = 2;
+            this.btnedit.Text = "Edit Information";
+            this.btnedit.UseVisualStyleBackColor = true;
+            this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
             // 
             // FrmDoctorDetails
             // 

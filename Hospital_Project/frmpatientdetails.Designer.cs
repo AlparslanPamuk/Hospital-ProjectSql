@@ -175,6 +175,7 @@
             this.btnappointment.Size = new System.Drawing.Size(221, 124);
             this.btnappointment.TabIndex = 4;
             this.btnappointment.UseVisualStyleBackColor = true;
+            this.btnappointment.Click += new System.EventHandler(this.btnappointment_Click);
             // 
             // label9
             // 
@@ -280,6 +281,7 @@
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(748, 273);
             this.dataGridView2.TabIndex = 5;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
             // panel1
             // 

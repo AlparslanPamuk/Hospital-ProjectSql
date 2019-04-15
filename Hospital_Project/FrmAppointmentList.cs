@@ -41,5 +41,12 @@ namespace Hospital_Project
             dataGridView1.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
         }
+
+        
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
     }
 }

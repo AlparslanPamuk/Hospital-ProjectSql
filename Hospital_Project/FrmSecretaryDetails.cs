@@ -128,5 +128,16 @@ namespace Hospital_Project
             FrmAppointmentList MustafaAlparslanPamuk = new FrmAppointmentList();
             MustafaAlparslanPamuk.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmAnnouncements frsksks = new FrmAnnouncements();
+            frsksks.Show();
+        }
+
+        // private void btnupdate_Click(object sender, EventArgs e)
+        //{
+
+        //}
     }
 }
