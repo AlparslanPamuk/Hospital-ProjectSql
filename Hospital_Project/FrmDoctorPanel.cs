@@ -45,6 +45,8 @@ namespace Hospital_Project
                 cmbbranch.Items.Add(dr5[0]);
             }
             connection.connection().Close();
+
+
         }
 
         private void btnadd_Click(object sender, EventArgs e)

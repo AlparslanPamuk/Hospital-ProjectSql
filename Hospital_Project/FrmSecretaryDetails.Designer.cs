@@ -366,6 +366,7 @@
             this.btnappointmentlist.TabIndex = 13;
             this.btnappointmentlist.Text = "Appointment List";
             this.btnappointmentlist.UseVisualStyleBackColor = true;
+            this.btnappointmentlist.Click += new System.EventHandler(this.btnappointmentlist_Click);
             // 
             // btnbranchpanel
             // 

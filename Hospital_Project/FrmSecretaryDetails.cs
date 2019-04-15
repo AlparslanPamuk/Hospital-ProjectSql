@@ -122,5 +122,11 @@ namespace Hospital_Project
             FrmBranch frb = new FrmBranch();
             frb.Show();
         }
+
+        private void btnappointmentlist_Click(object sender, EventArgs e)
+        {
+            FrmAppointmentList MustafaAlparslanPamuk = new FrmAppointmentList();
+            MustafaAlparslanPamuk.Show();
+        }
     }
 }
